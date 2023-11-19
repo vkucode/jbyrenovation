@@ -1,0 +1,8 @@
+.imgRevealToRight{
+    margin-left: -300px;
+    opacity: 0;
+}
+.imgRevealToLeft{
+    margin-right: -300px;
+    opacity: 0;
+}

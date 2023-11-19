@@ -1,0 +1,204 @@
+.heroSection{
+    position: relative;
+    top: 120px;
+    font-family: 'Kodchasan';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.textContainer{
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.textContainer h5{
+    font-size: medium;
+    width: 100%;
+    position: absolute;
+    left: -48%;
+    top: 40%;
+    height: fit-content;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F0993B;
+    rotate: -90deg;
+}
+.textContainer h1{
+    position: relative;
+    left: 5%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.textContainer button{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F0993B;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #F0993B;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #F0993B;
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #F0993B;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+.imgContainer{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    right: 0;
+    border-radius: 20px;
+    top: 0%;
+    background-image: url(../img/accueil/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+.imgContainer > div{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.33);
+    background: -webkit-linear-gradient(122deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(122deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+/*Sub Hero Section*/
+.subHero{
+    height: max-content;
+    overflow: hidden;
+    margin-top: 10%;
+}
+.subHero > div{
+    width: 100%;
+}
+.subHero h2{
+    color: #F0993B;
+    font-weight: bold;
+    font-family: 'Kodchasan';
+    text-transform: uppercase;
+}
+.subheroText p{
+    font-size: x-large;
+}
+.subheroText{
+    position: relative;
+    text-align: center;
+    right: -300px;
+    width: 100%;
+}
+
+/*Service Section*/
+.servicesSection{
+    height: fit-content;
+}
+.servicesSection h1{
+    color: #F0993B;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    font-family: 'Kanit';
+    text-transform: uppercase;
+}
+.servicesWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-direction: row;
+    align-content: center;
+}
+.serviceCard{
+    width: 30%;
+    margin: 20px 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    align-items: flex-end;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    height: 300px;
+    transition: 0.3s all ease-in-out;
+}
+.serviceCard:hover .serviceCardImage{
+    filter: grayscale(0%);
+    width: 120%;
+    height: 120%;
+}
+.serviceCard:hover .serviceCardTitle > h2{
+    margin-top: -35px;
+    font-family: 'Kodchasan';
+}
+.serviceCard:hover .serviceCardText > p{
+    opacity: 1;
+}
+.serviceCard:hover .serviceCardText{
+    background: rgba(0, 0, 0, 0.33);
+}
+.serviceCardTitle{
+    display: block;
+    overflow: hidden;
+    line-height: 2;
+    height: 40px;
+    position: relative;
+    z-index: 3;
+}
+.serviceCardTitle > h2{
+    font-size: x-large;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Kodchasan';
+    transition: 0.3s all ease-in-out;
+}
+.serviceCardImage{
+    transition: 0.3s all ease-in-out;
+    z-index: 1;
+    position: absolute;
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.serviceCardText{
+    z-index: 2;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.3s all ease-in-out;
+}
+.serviceCardText > p{
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}

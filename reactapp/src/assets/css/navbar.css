@@ -1,0 +1,20 @@
+.navbar{
+    background: rgba(40, 36, 36, 0.7);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+}
+.nav-link{
+    color: #fff!important;
+    font-family: 'Kodchasan';
+    text-transform: uppercase;
+    transition: 0.3s all ease-in-out;
+}
+.nav-link:hover{
+    color: #F0993B!important;
+}
+.nav-social{
+    color: #F0993B;
+}
