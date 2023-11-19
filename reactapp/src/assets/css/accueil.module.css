@@ -56,12 +56,12 @@
     box-shadow: inset 0 0 0 0 #F0993B;
   }
   
-  button:hover {
+  .textContainer button:hover {
     color: white;
     box-shadow: inset 0 -100px 0 0 #F0993B;
   }
   
-  button:active {
+  .textContainer button:active {
     transform: scale(0.9);
   }
 .imgContainer{
@@ -89,6 +89,31 @@
     background: -webkit-linear-gradient(122deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(122deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
 }
+@media (max-width: 1200px) {
+    .textContainer{
+        position: relative;
+        z-index: 2;
+        width: 90%;
+        height: 50vh;
+    }
+    .textContainer h1{
+        font-size: xx-large;
+    }
+}
+@media (max-width: 768px) {
+    .heroSection{
+        top: 0px;
+        min-height: 100vh;
+    }
+    .textContainer{
+        width: 100%;
+    }
+    .imgContainer{
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+}
 /*Sub Hero Section*/
 .subHero{
     height: max-content;
@@ -113,6 +138,25 @@
     right: -300px;
     width: 100%;
 }
+@media (max-width: 1200px) {
+    .subHero{
+        margin-top: 20%;
+    }
+    .subheroText p{
+        font-size: medium;
+    }
+    .subheroText{
+        position: relative;
+        text-align: center;
+        right: 0px;
+        width: 100%;
+    }
+}
+
+
+
+
+
 
 /*Service Section*/
 .servicesSection{
@@ -201,4 +245,28 @@
     z-index: 2;
     opacity: 0;
     transition: 0.3s all ease-in-out;
+}
+
+@media (max-width: 991px) {
+    .serviceCard{
+        width: 70%;
+    }
+}
+@media (max-width: 564px) {
+    .serviceCard{
+        width: 90%;
+    }
+}
+
+/*Portfolio section*/
+.portfolioSection h1{
+    color: #F0993B;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    font-family: 'Kanit';
+    text-transform: uppercase;
+}
+.portfolioSection h4{
+    font-family: 'Kodchasan';
 }

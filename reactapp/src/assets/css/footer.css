@@ -1,0 +1,39 @@
+.footerPage{
+    width: 100%;
+    box-shadow: 0px 0px 20px 1px #F0993B;
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+    padding: 40px 10px 20px 10px;
+    font-family: 'Kodchasan';
+}
+.footerImg{
+    width: 250px;
+}
+.footerPage a{
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: 'Kodchasan';
+    transition: 0.3s all ease-in-out;
+}
+.footerPage a:hover{
+    color: #F0993B;
+}
+.footerPage h3{
+    color: #F0993B;
+    font-weight: bold;
+    font-family: 'Kodchasan';
+    text-transform: uppercase;
+}
+.footerPage h5{
+    color: #fff;
+    font-family: 'Kodchasan';
+}
+.linksContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}

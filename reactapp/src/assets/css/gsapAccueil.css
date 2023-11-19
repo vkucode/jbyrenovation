@@ -1,8 +1,18 @@
 .imgRevealToRight{
     margin-left: -300px;
+    width: 100%;
     opacity: 0;
 }
 .imgRevealToLeft{
-    margin-right: -300px;
+    margin-left: 300px;
+    width: 100%;
     opacity: 0;
+}
+@media (max-width: 991px) {
+    .imgRevealToRight{
+        margin-bottom: 20px;
+    }
+    .imgRevealToLeft{
+        margin-top: 20px;
+    }
 }
