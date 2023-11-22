@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Accueil from "./components/Accueil";
 import Navbar from "./components/elements/Navbar";
 import Contact from "./components/Contact";
+import "./index.css";
 import Legales from "./components/Legales";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";

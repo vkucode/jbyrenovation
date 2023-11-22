@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #282424 !important;
+  color: #fff !important;
+  font-family: "Kanit" !important;
+}

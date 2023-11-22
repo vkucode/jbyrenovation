@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../../assets/css/accueil.module.css'
 import Img1 from '../../assets/img/works/imgrenov1.png'
 import Img2 from '../../assets/img/works/imgrenov2.png'
 import Img3 from '../../assets/img/works/imgrenov3.png'

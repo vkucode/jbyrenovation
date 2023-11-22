@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import 'animate.css'
+import '../index.css'
 import '../assets/css/style.css'
 import '../assets/css/gsapAccueil.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -11,7 +12,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import Img1 from '../assets/img/accueil/1.png'
 import Img2 from '../assets/img/accueil/2.png'
 import Img3 from '../assets/img/accueil/3.png'
-import Services from './elements/Services'
+import Services from './elements/Service'
 import Portfolio from './elements/Portfolio'
 import 'animate.css'
 
@@ -25,7 +26,7 @@ const Accueil = () => {
   useEffect(() => {
   gsap.registerPlugin(ScrollTrigger ,ScrollSmoother);
 
-  let smoother = ScrollSmoother.create({
+ ScrollSmoother.create({
     wrapper: '#smooth-wrapper',
     content: '#smooth-content',
     smooth: 2,
@@ -84,10 +85,10 @@ const Accueil = () => {
         
       </div>
       <div className='row d-flex flex-row justify-content-center align-items-center mt-5'>
-        <div className='col-12'>
+        <div className='col-12 col-md-6'>
           <img src={Img3} alt="" className={`imgRevealToLeft`}  />
         </div>
-        <div className='col-12'> 
+        <div className='col-12 col-md-6'> 
           <div className={`${styles.subheroText} imgRevealToLeft`}>
             <h2>Comment on travaille</h2>
             <p>
@@ -98,14 +99,14 @@ const Accueil = () => {
         </div>
       </div>
     </section>
-    <section className={`${styles.servicesSection} container`}>
+    <section className={`${styles.servicesSection} container`} id='services'>
       <Services />
     </section>
     <section className={`${styles.portfolioSection} mb-5`}>
       <Portfolio />
     </section>
     <section className={`${styles.bannerSection}`}>
-
+      
     </section>
     <section className={`${styles.contactSection}`}>
 

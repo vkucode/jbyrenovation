@@ -1,0 +1,15 @@
+.navbar{
+  @apply fixed z-30 w-screen uppercase px-0 md:px-10;
+  background: rgba($color: #282424, $alpha: 0.8);
+  backdrop-filter: blur(10px);
+  font-family: 'Kodchasan';
+  .callButton{
+    @apply md:px-4 md:py-2 p-1 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium rounded-md flex flex-row items-center text-sm;
+  }
+}
+.navmenu{
+  @apply absolute w-screen p-4 shadow-lg left-0 top-full origin-top flex flex-col gap-4;
+  background: rgba($color: #282424, $alpha: 0.8);
+  backdrop-filter: blur(10px);
+  font-family: 'Kodchasan';
+}
