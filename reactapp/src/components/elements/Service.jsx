@@ -6,12 +6,6 @@ import revetementImg from '../../assets/img/accueil/revetement.png'
 import carrelageImg from '../../assets/img/accueil/carrelage.jpg'
 import isolationImg from '../../assets/img/accueil/isolation.jpg'
 import amenagementImg from '../../assets/img/accueil/amenagement.png'
-import plomberieImg from '../../assets/img/accueil/plomberie.jpg'
-import electriciteImg from '../../assets/img/accueil/electricite.jpg'
-import installationImg from '../../assets/img/accueil/installation.png'
-import nettoyageImg from '../../assets/img/accueil/nettoyage.jpg'
-import debarrassageImg from '../../assets/img/accueil/debarrassage.jpg'
-import prestationImg from '../../assets/img/accueil/prestation.jpg'
 import AnimatedDiv from "./AnimatedDiv";
 
 const Services = () => {

@@ -43,21 +43,21 @@ const Accueil = () => {
           <img src={Img2} alt="" width={"100%"} />
         </AnimatedDiv>
         </div>
-        <div className='col-12 col-md-7'>
-        <AnimatedDiv xInitial={300} xFinal={0}>
+        <div className='col-12 col-md-7 mt-4 md:mt-0'>
+        <AnimatedDiv xInitial={"300"} xFinal={0}>
           <img src={Img1} alt="" width={"100%"} />
         </AnimatedDiv>
         </div>
         
       </div>
-      <div className='row d-flex flex-row justify-content-center align-items-center mt-5'>
+      <div className='row d-flex flex-row justify-content-center align-items-center mt-4 md:mt-5'>
         <div className='col-12 col-md-6'>
         <AnimatedDiv xInitial={"-300"} xFinal={0}>
           <img src={Img3} alt="" width={"100%"} />
         </AnimatedDiv>
         </div>
         <div className='col-12 col-md-6'> 
-        <AnimatedDiv xInitial={300} xFinal={0}>        
+        <AnimatedDiv xInitial={"300"} xFinal={0}>        
           <div className={`${styles.subheroText}`}>
             <h2>Comment on travaille</h2>
             <p>
