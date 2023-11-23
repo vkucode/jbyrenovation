@@ -44,20 +44,19 @@ const NavLeft = ({ setIsOpen }) => {
       >
         <FiMenu />
       </motion.button>
-      <Logo />
-      <NavLink text="A propos" link="#" />
-      <NavLink text="Services" link="#" />
-      <NavLink text="Projets" link="#"  />
-      <NavLink text="blog" link="#"  />
+      <Link to="/"><Logo /></Link>
+      <NavLink text="A propos" link="/#" />
+      <NavLink text="Services" link="/#services" />
+      <NavLink text="Projets" link="/projets"  />
+      <NavLink text="blog" link="/blog"  />
     </div>
   );
 };
 
 const NavLink = ({ text, link }) => {
   return (
-    <a
-      href={link}
-      rel="nofollow"
+    <Link
+      to={link}
       className="hidden lg:block h-[30px] overflow-hidden no-underline font-medium"
     >
       <motion.div whileHover={{ y: -30 }}>
@@ -66,14 +65,14 @@ const NavLink = ({ text, link }) => {
           {text}
         </span>
       </motion.div>
-    </a>
+    </Link>
   );
 };
 
 const NavRight = () => {
   return (
     <div className="flex items-center gap-4">
-      <Link to="#contact" className="no-underline">
+      <Link to="/contact" className="no-underline">
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}

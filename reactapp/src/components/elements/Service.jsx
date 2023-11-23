@@ -12,76 +12,59 @@ import installationImg from '../../assets/img/accueil/installation.png'
 import nettoyageImg from '../../assets/img/accueil/nettoyage.jpg'
 import debarrassageImg from '../../assets/img/accueil/debarrassage.jpg'
 import prestationImg from '../../assets/img/accueil/prestation.jpg'
+import AnimatedDiv from "./AnimatedDiv";
 
 const Services = () => {
   return (
-    <div className="p-4 md:p-8 bg-transparent">
+    <div className="p-4 md:p-8 bg-transparent container">
+      <AnimatedDiv xInitial={"300"} xFinal={0}>
         <h1 className="w-full text-right py-3 mt-3 text-3xl md:text-5xl">Renovation et amenagement d'interieur</h1>
+        </AnimatedDiv>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl mx-auto">
+            <AnimatedDiv xInitial={"-300"} xFinal={0}> 
             <Card
             heading="Peinture"
             description="Offrons des services de peinture professionnelle pour espaces neufs et anciens, garantissant une finition impeccable et durable, adaptée à chaque style et préférence"
             imgSrc={perintureImg}
             />
+            </AnimatedDiv>
+            <AnimatedDiv xInitial={"300"} xFinal={0}>
             <Card
             heading="Enduit General"
             description="Spécialisés en enduits généraux et rebouchages locaux pour une finition lisse et parfaite, préparant vos murs et plafonds pour la peinture ou tout autre revêtement."
             imgSrc={enduitImg}
             />
+            </AnimatedDiv>
+            <AnimatedDiv xInitial={"-300"} xFinal={0}> 
             <Card
             heading="Revêtements"
             description="Fournissons une large gamme de revêtements pour sols et murs, incluant des options modernes et traditionnelles pour transformer et valoriser votre espace"
             imgSrc={revetementImg}
             />
+            </AnimatedDiv>
+            <AnimatedDiv xInitial={"300"} xFinal={0}>
             <Card
             heading="Carrelage & Parquet"
             description="Expertise en pose de carrelage et parquet, offrant une variété de styles et de motifs pour créer des espaces uniques et élégants"
             imgSrc={carrelageImg}
             />
+            </AnimatedDiv>
+            <AnimatedDiv xInitial={"-300"} xFinal={0}>
             <Card
             heading="Isolation & Placo"
             description="Proposons des solutions d'isolation et d'installation de plaques de plâtre (placo) pour améliorer le confort et l'efficacité énergétique de votre habitat"
             imgSrc={isolationImg}
             />
+            </AnimatedDiv>
+            <AnimatedDiv xInitial={"300"} xFinal={0}>
             <Card
             heading="Decoration d'interieur"
             description="Services d'aménagement et de décoration d'intérieur pour créer des espaces harmonieux et fonctionnels, reflétant votre personnalité et style de vie."
             imgSrc={amenagementImg}
             />
+            </AnimatedDiv>
         </div>
-        <h1 className="w-full text-right py-3 mt-3 text-3xl md:text-5xl">Nos Prestation Multiservices</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl mx-auto">
-            <Card
-            heading="Plomberie"
-            description="Services de plomberie complets, incluant installations, réparations et entretien, assurant le bon fonctionnement de vos installations sanitaires."
-            imgSrc={plomberieImg}
-            />
-            <Card
-            heading="Electricite"
-            description="Offrons des services électriques fiables et sécurisés, de l'installation au dépannage, conformes aux normes en vigueur"
-            imgSrc={electriciteImg}
-            />
-            <Card
-            heading="Installation"
-            description="Spécialistes en conception et installation de cuisines et salles de bains sur mesure, combinant fonctionnalité et esthétique"
-            imgSrc={installationImg}
-            />
-            <Card
-            heading="Nettoyage complet"
-            description="Fournissons des services de remise en état et nettoyage complet, redonnant éclat et propreté à votre espace après travaux ou pour un entretien régulier"
-            imgSrc={nettoyageImg}
-            />
-            <Card
-            heading="Debarrassage"
-            description="Offrons un service efficace de débarrassage d'encombrants, aidant à libérer de l'espace et à éliminer les déchets en toute sécurité."
-            imgSrc={debarrassageImg}
-            />
-            <Card
-            heading="Prestation sur demande"
-            description="Proposons des prestations personnalisées sur demande, répondant à des besoins spécifiques en matière de rénovation et d'aménagement d'espace."
-            imgSrc={prestationImg}
-            />
-        </div>
+        
     </div>
   );
 };

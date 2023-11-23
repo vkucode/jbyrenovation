@@ -1,7 +1,7 @@
 .heroSection {
   position: relative;
   top: 120px;
-  font-family: "Kodchasan";
+  font-family: "Kanit";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +143,7 @@
 .subheroText {
   position: relative;
   text-align: center;
-  right: -300px;
+  margin-top: 20px;
   width: 100%;
 }
 @media (max-width: 1200px) {
