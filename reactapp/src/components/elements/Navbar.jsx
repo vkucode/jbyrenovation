@@ -45,18 +45,18 @@ const NavLeft = ({ setIsOpen }) => {
         <FiMenu />
       </motion.button>
       <Link to="/"><Logo /></Link>
-      <NavLink text="A propos" link="/#" />
+      <NavLink text="A propos" link="/#a_propos" />
       <NavLink text="Services" link="/#services" />
       <NavLink text="Projets" link="/projets"  />
-      <NavLink text="blog" link="/blog"  />
+      <NavLink text="Blog" link="/blog"  />
     </div>
   );
 };
 
 const NavLink = ({ text, link }) => {
   return (
-    <Link
-      to={link}
+    <a
+      href={link}
       className="hidden lg:block h-[30px] overflow-hidden no-underline font-medium"
     >
       <motion.div whileHover={{ y: -30 }}>
@@ -65,7 +65,7 @@ const NavLink = ({ text, link }) => {
           {text}
         </span>
       </motion.div>
-    </Link>
+    </a>
   );
 };
 
@@ -102,10 +102,10 @@ const NavMenu = ({ isOpen }) => {
       animate={isOpen ? "open" : "closed"}
       className={styles.navmenu}
     >
-      <MenuLink text="Solutions" link=""/>
-      <MenuLink text="Community" link="" />
-      <MenuLink text="Pricing" link="" />
-      <MenuLink text="Company" link="" />
+      <MenuLink text="A propos" link="/#a_propos"/>
+      <MenuLink text="Services" link="/#services" />
+      <MenuLink text="Projets" link="/projets" />
+      <MenuLink text="Blog" link="/blog" />
     </motion.div>
   );
 };

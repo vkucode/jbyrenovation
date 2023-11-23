@@ -35,7 +35,7 @@ const Accueil = () => {
           </div>
       </div>
     </section>
-    <section className={`${styles.subHero} container mb-5`}> 
+    <section className={`${styles.subHero} container mb-5`} id='a_propos'> 
       <div className='row justify-content-between align-items-baseline'>
         
         <div className='col-12 col-md-4'>
